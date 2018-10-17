@@ -18,7 +18,7 @@ class BowlingSpec extends FunSpec with Matchers {
 
         describe("when only Strike") {
             it("should have score of 300") {
-                assert(Bowling().addSameRolls(Roll(10,0)).score == 300)
+                assert(Bowling().addSameRolls(Roll.strike).score == 300)
             }
         }
 
